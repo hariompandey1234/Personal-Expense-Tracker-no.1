@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="glass-title">Expense Tracker</h2>
+        
+        <div class="balance-card">
+            <h4>Current Balance</h4>
+            <h1 id="balance">₹0.00</h1>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-box income">
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">+₹0.00</p>
+            </div>
+            <div class="stat-box expense">
+                <h4>Expense</h4>
+                <p id="money-minus" class="money minus">-₹0.00</p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+        <ul id="list" class="list"></ul>
+
+        <h3>New Transaction</h3>
+        <form id="form">
+            <input type="text" id="text" placeholder="Description..." required>
+            <input type="number" id="amount" placeholder="Amount (- for expense)" required>
+            <button class="btn">Add Transaction</button>
+        </form>
+        <a href="file:///C:/Users/pc/OneDrive/Desktop/Project%20%20Jan%202026/Personal%20Portfolio/index.html#home" class="back-link">← Back to Portfolio</a>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

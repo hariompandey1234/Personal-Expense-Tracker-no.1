@@ -1,0 +1,87 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body {
+    background: #0f172a;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+    color: #fff;
+}
+
+.container {
+    width: 380px; 
+    padding: 30px; 
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.glass-title { text-align: center; color: #38bdf8; margin-bottom: 20px; }
+
+.balance-card {
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    padding: 20px; 
+    border-radius: 15px; 
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+}
+
+.stats-row { display: flex; gap: 10px; margin: 20px 0; }
+
+.stat-box { 
+    flex: 1; 
+    padding: 10px; 
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 12px; 
+    text-align: center; 
+}
+
+.money.plus { color: #4ade80; font-weight: bold; }
+.money.minus { color: #f87171; font-weight: bold; }
+
+.list { list-style: none; padding: 0; max-height: 150px; overflow-y: auto; }
+
+.list li {
+    background: rgba(255, 255, 255, 0.08); 
+    padding: 10px;
+    margin: 8px 0; 
+    border-radius: 8px; 
+    display: flex; 
+    justify-content: space-between;
+    border-left: 4px solid #38bdf8;
+}
+
+.list li.minus { border-left-color: #f87171; }
+
+input {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1); 
+    background: rgba(0,0,0,0.3);
+    color: #fff; 
+    outline: none;
+}
+
+.btn {
+    cursor: pointer; 
+    background: #38bdf8; 
+    color: #0f172a;
+    border: 0; 
+    padding: 12px; 
+    width: 100%; 
+    border-radius: 8px;
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: 0.3s;
+}
+
+.btn:hover { background: #fff; transform: scale(1.02); }
+
+.back-link { display: block; text-align: center; margin-top: 15px; color: #64748b; text-decoration: none; font-size: 14px; }
+
